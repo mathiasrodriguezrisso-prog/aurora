@@ -1,0 +1,5 @@
+sentence-transformers
+supabase
+pytest
+numpy
+python-jose[cryptography]
