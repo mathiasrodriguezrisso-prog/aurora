@@ -58,7 +58,12 @@ async def send_chat_message(
     if not _check_chat_rate_limit(user_id):
         raise HTTPException(
             status_code=status.HTTP_429_TOO_MANY_REQUESTS,
-            detail={"error": "Chat rate limit exceeded. Try again in a minute."},
+            detail={
+                "error": "Rate limit exceeded",
+                "detail": "Max 30 messages per minute",
+                "retry_after_seconds": 60,
+                "code": "RATE_001"
+            },
         )
 
     try:
@@ -81,14 +86,19 @@ async def send_chat_message(
         logger.error("Chat logic error: %s", e)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail={"error": str(e), "code": "CHAT_SERVICE_ERROR"},
+            detail={
+                "error": "Chat service error",
+                "detail": str(e),
+                "code": "CHAT_SERVICE_ERROR",
+            },
         )
     except Exception as e:
-        logger.error("Unexpected chat error: %s", e)
+        logger.error("Unexpected chat error: %s", e, exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail={
                 "error": "An unexpected error occurred",
+                "detail": "Please try again later. If this persists, contact support.",
                 "code": "INTERNAL_ERROR",
             },
         )
@@ -141,13 +151,21 @@ async def get_chat_history(
         logger.error("History error: %s", e)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail={"error": str(e), "code": "HISTORY_ERROR"},
+            detail={
+                "error": "Failed to load chat history",
+                "detail": str(e),
+                "code": "HISTORY_ERROR"
+            },
         )
     except Exception as e:
-        logger.error("Unexpected history error: %s", e)
+        logger.error("Unexpected history error: %s", e, exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail={"error": "Failed to load history", "code": "INTERNAL_ERROR"},
+            detail={
+                "error": "Failed to load chat history",
+                "detail": "Please try again later.",
+                "code": "INTERNAL_ERROR"
+            },
         )
 
 

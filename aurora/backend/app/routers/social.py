@@ -165,8 +165,15 @@ async def get_feed(
         return {"posts": posts, "page": page, "has_more": len(raw_posts) == limit}
 
     except Exception as e:
-        logger.error("Feed error: %s", e)
-        raise HTTPException(500, detail={"error": str(e)})
+        logger.error("Feed error: %s", e, exc_info=True)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail={
+                "error": "Failed to load feed",
+                "detail": "Please check your pagination parameters and try again.",
+                "code": "FEED_ERROR"
+            }
+        )
 
 
 # ── Create Post ─────────────────────────────────────────────────
@@ -180,7 +187,15 @@ async def create_post(
     sb = get_supabase_client()
 
     if not check_rate_limit(user_id):
-        raise HTTPException(status.HTTP_429_TOO_MANY_REQUESTS, detail="Rate limit exceeded")
+        raise HTTPException(
+            status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+            detail={
+                "error": "Rate limit exceeded",
+                "detail": "Max 30 social actions per minute. Please retry after 60 seconds.",
+                "code": "RATE_001",
+                "retry_after_seconds": 60
+            }
+        )
 
     try:
         # Toxicity check
