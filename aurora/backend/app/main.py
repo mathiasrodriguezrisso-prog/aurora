@@ -18,7 +18,7 @@ from app.core.socket_manager import socket_manager
 
 from app.config import settings
 from app.dependencies import get_supabase_client, get_groq_client, verify_jwt
-from app.routers import health, grow, chat, social, auth
+from app.routers import health, grow, chat, social, auth, climate
 
 # ── Logging ─────────────────────────────────────────────────────
 
@@ -160,6 +160,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 # Core routers (already exist)
 app.include_router(health.router, tags=["Health"])
 app.include_router(auth.router)
+app.include_router(climate.router)
 app.include_router(grow.router)
 app.include_router(chat.router)
 app.include_router(social.router)
