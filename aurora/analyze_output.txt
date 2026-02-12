@@ -1,0 +1,85 @@
+Analyzing aurora...                                             
+
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\core\config\app_theme.dart:16:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\core\config\app_theme.dart:17:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\core\presentation\widgets\aurora_bottom_nav.dart:54:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\core\presentation\widgets\aurora_bottom_nav.dart:121:43 - deprecated_member_use
+   info - Don't invoke 'print' in production code - aurora_app\lib\core\services\notification_service.dart:19:5 - avoid_print
+   info - Don't invoke 'print' in production code - aurora_app\lib\features\auth\data\datasources\auth_remote_data_source.dart:37:7 - avoid_print
+warning - Unused import: '../../../../core/config/app_router.dart' - aurora_app\lib\features\auth\presentation\screens\splash_screen.dart:9:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\auth\presentation\screens\splash_screen.dart:68:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\chat\presentation\screens\chat_screen.dart:94:39 - deprecated_member_use
+warning - Unused import: '../../../../core/config/app_theme.dart' - aurora_app\lib\features\chat\presentation\widgets\action_chips.dart:4:8 - unused_import
+warning - Unused import: '../../../../shared/widgets/glass_container.dart' - aurora_app\lib\features\chat\presentation\widgets\chat_bubble.dart:4:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\chat\presentation\widgets\chat_bubble.dart:16:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\chat\presentation\widgets\dr_aurora_avatar.dart:24:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\chat\presentation\widgets\dr_aurora_avatar.dart:27:37 - deprecated_member_use
+   info - Don't invoke 'print' in production code - aurora_app\lib\features\dashboard\data\repositories\dashboard_repository.dart:13:7 - avoid_print
+   info - Don't invoke 'print' in production code - aurora_app\lib\features\dashboard\data\repositories\dashboard_repository.dart:22:7 - avoid_print
+   info - Don't invoke 'print' in production code - aurora_app\lib\features\dashboard\data\repositories\dashboard_repository.dart:31:7 - avoid_print
+   info - Don't invoke 'print' in production code - aurora_app\lib\features\dashboard\data\repositories\dashboard_repository.dart:40:7 - avoid_print
+warning - Unused import: 'package:go_router/go_router.dart' - aurora_app\lib\features\dashboard\presentation\screens\home_screen.dart:4:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\dashboard\presentation\screens\home_screen.dart:48:63 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\aurora_tip_card.dart:15:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\aurora_tip_card.dart:16:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\aurora_tip_card.dart:16:32 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\aurora_tip_card.dart:19:16 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - aurora_app\lib\features\dashboard\presentation\widgets\aurora_tip_card.dart:20:21 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\aurora_tip_card.dart:23:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\aurora_tip_card.dart:24:22 - prefer_const_constructors
+warning - Unused import: '../../../../core/config/app_theme.dart' - aurora_app\lib\features\dashboard\presentation\widgets\community_highlight_widget.dart:4:8 - unused_import
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\community_highlight_widget.dart:18:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\community_highlight_widget.dart:38:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\community_highlight_widget.dart:39:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\daily_ops_widget.dart:49:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\dashboard\presentation\widgets\daily_ops_widget.dart:49:36 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\grow\presentation\screens\generating_plan_screen.dart:159:15 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - aurora_app\lib\features\grow\presentation\screens\generating_plan_screen.dart:161:27 - prefer_const_literals_to_create_immutables
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\grow\presentation\screens\plan_summary_screen.dart:40:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\grow\presentation\screens\plan_summary_screen.dart:42:58 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - aurora_app\lib\features\grow\presentation\screens\plan_summary_screen.dart:197:42 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - aurora_app\lib\features\grow\presentation\screens\plan_summary_screen.dart:200:21 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - aurora_app\lib\features\grow\presentation\screens\plan_summary_screen.dart:204:42 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\onboarding\presentation\screens\onboarding_screen.dart:74:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\onboarding\presentation\screens\onboarding_screen.dart:77:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\profile\presentation\screens\edit_profile_screen.dart:86:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\profile\presentation\screens\profile_screen.dart:38:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\profile\presentation\screens\public_profile_screen.dart:23:71 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\profile\presentation\screens\settings_screen.dart:75:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - aurora_app\lib\features\profile\presentation\screens\settings_screen.dart:82:19 - prefer_const_constructors
+warning - Unused import: '../../../../shared/widgets/shimmer_loading.dart' - aurora_app\lib\features\social\presentation\screens\post_detail_screen.dart:5:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\social\presentation\widgets\post_card.dart:35:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\social\presentation\widgets\post_card.dart:50:58 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\features\social\presentation\widgets\post_card.dart:59:45 - deprecated_member_use
+warning - Unused import: 'package:flutter_dotenv/flutter_dotenv.dart' - aurora_app\lib\main.dart:6:8 - unused_import
+   info - Don't invoke 'print' in production code - aurora_app\lib\main.dart:30:5 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\shared\widgets\aurora_chip.dart:24:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - aurora_app\lib\shared\widgets\aurora_chip.dart:27:65 - deprecated_member_use
+   info - The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - aurora_app\lib\shared\widgets\glass_container.dart:2:8 - unnecessary_import
+warning - The declaration '_ShimmerCircle' isn't referenced - aurora_app\lib\shared\widgets\shimmer_loading.dart:63:7 - unused_element
+   info - The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\features\chat\presentation\screens\chat_screen.dart:6:8 - unnecessary_import
+warning - Unused import: 'package:intl/intl.dart' - lib\features\dashboard\presentation\screens\home_screen.dart:10:8 - unused_import
+warning - Unused import: '../../../grow/data/models/grow_plan_model.dart' - lib\features\dashboard\presentation\screens\home_screen.dart:13:8 - unused_import
+warning - Unused import: '../../../grow/data/models/grow_task_model.dart' - lib\features\dashboard\presentation\screens\home_screen.dart:14:8 - unused_import
+warning - Unused import: '../widgets/plant_status_widget.dart' - lib\features\dashboard\presentation\screens\home_screen.dart:21:8 - unused_import
+  error - The named parameter 'height' is required, but there's no corresponding argument - lib\features\dashboard\presentation\screens\home_screen.dart:137:20 - missing_required_argument
+  error - The named parameter 'currentDay' isn't defined - lib\features\dashboard\presentation\screens\home_screen.dart:201:11 - undefined_named_parameter
+  error - The named parameter 'currentWeek' isn't defined - lib\features\dashboard\presentation\screens\home_screen.dart:202:11 - undefined_named_parameter
+  error - The named parameter 'completedTasks' isn't defined - lib\features\dashboard\presentation\screens\home_screen.dart:203:11 - undefined_named_parameter
+  error - The named parameter 'totalTasks' isn't defined - lib\features\dashboard\presentation\screens\home_screen.dart:204:11 - undefined_named_parameter
+  error - The named parameter 'tip' isn't defined - lib\features\dashboard\presentation\screens\home_screen.dart:215:13 - undefined_named_parameter
+  error - The named parameter 'category' isn't defined - lib\features\dashboard\presentation\screens\home_screen.dart:216:13 - undefined_named_parameter
+  error - The named parameter 'onAddPhoto' is required, but there's no corresponding argument - lib\features\dashboard\presentation\screens\home_screen.dart:221:15 - missing_required_argument
+  error - The named parameter 'onLogFeed' is required, but there's no corresponding argument - lib\features\dashboard\presentation\screens\home_screen.dart:221:15 - missing_required_argument
+  error - The named parameter 'onReportIssue' is required, but there's no corresponding argument - lib\features\dashboard\presentation\screens\home_screen.dart:221:15 - missing_required_argument
+  error - The named parameter 'onSettings' is required, but there's no corresponding argument - lib\features\dashboard\presentation\screens\home_screen.dart:221:15 - missing_required_argument
+  error - The named parameter 'height' is required, but there's no corresponding argument - lib\features\dashboard\presentation\screens\home_screen.dart:234:20 - missing_required_argument
+  error - The body might complete normally, causing 'null' to be returned, but the return type, 'Widget', is a potentially non-nullable type - lib\features\dashboard\presentation\widgets\cycle_widget.dart:98:10 - body_might_complete_normally
+warning - The label 'child' isn't used - lib\features\dashboard\presentation\widgets\cycle_widget.dart:99:7 - unused_label
+warning - Unused import: 'dart:io' - lib\features\grow\presentation\widgets\grow_gallery.dart:6:8 - unused_import
+   info - The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\features\social\presentation\screens\post_detail_screen.dart:5:8 - unnecessary_import
+   info - The import of 'dart:typed_data' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/foundation.dart' - lib\shared\services\image_upload_service.dart:7:8 - unnecessary_import
+warning - Unused import: 'package:image_picker/image_picker.dart' - lib\shared\services\image_upload_service.dart:12:8 - unused_import
+   info - The import of 'package:flutter/material.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/cupertino.dart' - lib\shared\widgets\glass_toggle.dart:5:8 - unnecessary_import
+   info - 'trackColor' is deprecated and shouldn't be used. Use inactiveTrackColor instead. This feature was deprecated after v3.24.0-0.2.pre - lib\shared\widgets\glass_toggle.dart:49:13 - deprecated_member_use
+
